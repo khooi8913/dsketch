@@ -1,6 +1,10 @@
 typedef bit<32> count_t;
 typedef bit<8> window_t;
 
+// Use packet length as the unit
+// #define INCREMENT ((bit<32>)hdr.ipv4.total_len)
+
+// Use packet counts as the unit
 #define INCREMENT 1
 #define SKETCH_CTR_PER_ROW 63356 
 
@@ -160,17 +164,17 @@ control DSketch (
         if (diff_r0 == 0) {
             NoAction();
         } else if (diff_r0 == 1) {
-            shift0(192);
+            shift0(192);        // specify your recirculation port
         } else {
-            zero0(192);
+            zero0(192);         // specify your recirculation port
         }
 
         if (diff_r1 == 0) {
             NoAction();
         } else if (diff_r1 == 1) {
-            shift1(192);
+            shift1(192);        // specify your recirculation port
         } else {
-            zero1(192);
+            zero1(192);         // specify your recirculation port
         }
     }
 }
