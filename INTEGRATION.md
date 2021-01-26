@@ -1,4 +1,4 @@
-# Integrating `dSketch`
+# Integrating/ Using `dSketch`
 
 Here, we discuss the steps to integrate `dSketch` in to existing P4_16 programs for the Intel Tofino-based switches.
 We use the commodity programmable switch, `switch.p4` as the example in this case. The same applies for other programs.
@@ -100,3 +100,22 @@ SwitchIngress(...) {
 
 ```
 
+## Optimizations (Optional)
+Instead of recirculating the original packet, we can clone the packet and then recirculate only the cloned packet to update the `dSketch` (which will subsequently then be dropped).
+
+To do this, you will need to replace the few lines of code in `dSketch` to set the `mirror_type` in place of setting the egress ports to the recirculation port.
+
+Then, you will need to specify the `mirror_type` used, as well as the ports belonging to the mirror `session` (in the following example, we use `mirror_type` 1 and `session` 123).
+```
+SwitchIngressDeparser (...) {
+    apply {
+        ...
+        if(ig_dprsr_md.mirror_type == 1) {
+            // session 123, where it points to the recirculation port
+            mirror.emit(10w123);
+        }
+        ...
+    }
+}
+```
+On top of that, you will have to manually invalidate the `decay_update` header in the *Egress control block* in order to restore the original packet structure before being forwarded out.
