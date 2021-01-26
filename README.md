@@ -5,8 +5,9 @@ This repository holds the implementation for the time-decaying in-network heavy-
 ## Usage/ Integration 
 Please see [INTEGRATION.md](INTEGRATION.md) for more detail.
 
-## Feedback
-Suggestions and opinions on this work are greatly welcomed. 
+## Feedback/ Questions
+We welcome questions/ comments/ feedback.
+
 Please do not hesitate reach out the authors via email.
 
 ## License
