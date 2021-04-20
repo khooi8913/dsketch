@@ -5,6 +5,19 @@ This repository holds the implementation for the time-decaying in-network heavy-
 ## Usage/ Integration 
 Please see [INTEGRATION.md](INTEGRATION.md) for more detail.
 
+## Citation
+
+If you find this work useful for your research, please cite:
+
+```
+@INPROCEEDINGS{dsketch,
+  author={Khooi, Xin Zhe and Csikor, Levente and Li, Jialin and Kang, Min Suk and Divakaran, Dinil Mon},
+  booktitle={2021 IEEE 7th International Conference on Network Softwarization (NetSoft)}, 
+  title={{Revisiting Heavy-Hitter Detection on Commodity Programmable Switches}},
+  year={2021},
+}
+```
+
 ## Feedback/ Questions
 We welcome questions/ comments/ feedback.
 
