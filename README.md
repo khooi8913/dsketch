@@ -2,7 +2,7 @@
 
 This repository holds the implementation for the time-decaying in-network heavy-hitter detection algorithm, `dSketch`, proposed in the paper `Revisiting Heavy-Hitter Detection on Commodity Programmable Switches` accepted (and to be presented) at [IEEE NetSoft 2021](https://netsoft2021.ieee-netsoft.org/).
 
-You can find the paper [here](https://drive.google.com/file/d/1H9zYEp4b-AQT7g8fAVw5UJzRjNtrDQ7F/view).
+You can find the paper [here](https://ieeexplore.ieee.org/document/9492531).
 
 ## Usage/ Integration 
 Please see [INTEGRATION.md](INTEGRATION.md) for more detail.
