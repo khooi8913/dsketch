@@ -17,11 +17,15 @@ The folder `misc/` holds the reference implementation for the other algorithms' 
 If you find this work useful for your research, please cite:
 
 ```
-@INPROCEEDINGS{dsketch,
-  author={Khooi, Xin Zhe and Csikor, Levente and Li, Jialin and Kang, Min Suk and Divakaran, Dinil Mon},
+@INPROCEEDINGS{9492531,
+  author={Khooi, Xin Zhe and Csikor, Levente and Li, Jialin and Kang, Min Suk and Divakara, Dinil Mon},
   booktitle={2021 IEEE 7th International Conference on Network Softwarization (NetSoft)}, 
-  title={{Revisiting Heavy-Hitter Detection on Commodity Programmable Switches}},
+  title={Revisiting Heavy-Hitter Detection on Commodity Programmable Switches}, 
   year={2021},
+  volume={},
+  number={},
+  pages={79-87},
+  doi={10.1109/NetSoft51509.2021.9492531}
 }
 ```
 
