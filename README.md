@@ -18,7 +18,7 @@ If you find this work useful for your research, please cite:
 
 ```
 @INPROCEEDINGS{9492531,
-  author={Khooi, Xin Zhe and Csikor, Levente and Li, Jialin and Kang, Min Suk and Divakara, Dinil Mon},
+  author={Khooi, Xin Zhe and Csikor, Levente and Li, Jialin and Kang, Min Suk and Divakaran, Dinil Mon},
   booktitle={2021 IEEE 7th International Conference on Network Softwarization (NetSoft)}, 
   title={Revisiting Heavy-Hitter Detection on Commodity Programmable Switches}, 
   year={2021},
